@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+  <!--    <context:component-scan base-package="com.webmedia.controller" /> -->
+        
+     
+     <bean id="portfolioController" name="/portfolio.htm" class="com.webmedia.controller.PortfolioController">
+     	           <property name="portfolioItemManager" ref="portfolioItemManager"> </property>
+     	           <property name="userManager" ref="userManager"> </property>
+     	
+     </bean>
+   	     
+     <bean id="transactionController" name="/transaction.htm" 
+           class="com.webmedia.controller.TransactionController">
+        <property name="portfolioItemManager" ref="portfolioItemManager"> </property>
+     </bean>
+    
+    
+     <bean id="processOrderController" name="/processOrder.htm" class="com.webmedia.controller.ProcessOrderController">
+        <property name="portfolioItemManager" ref="portfolioItemManager"/>
+    </bean>
+    
+    <bean id="executeOrderController" name="/executeOrder.htm" class="com.webmedia.controller.ExecuteOrderController">
+        <property name="portfolioItemManager" ref="portfolioItemManager"/>
+    	<property name="userManager" ref="userManager"/>
+    </bean>
+    
+ <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"></property>
+        <property name="prefix" value="/WEB-INF/jsp/"></property>
+        <property name="suffix" value=".jsp"></property>        
+    </bean>
+
+	<bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <property name="basename" value="messages"/>
+    </bean>
+    
+<bean id="logonValidator" class="com.webmedia.controller.LogonValidator">
+	        <property name="userManager" ref="userManager"/>
+</bean>
+
+ <bean id="logonForm" class="com.webmedia.controller.LogonFormController">
+        <property name="sessionForm"><value>true</value></property>
+        <property name="commandName"><value>user</value></property>
+        <property name="commandClass"><value>com.webmedia.domain.User</value></property>
+        <property name="validator"><ref bean="logonValidator"/></property>
+        <property name="formView"><value>logon</value></property>
+        <property name="successView"><value>logon</value></property>
+    </bean>
+
+
+     <!-- you can have more than one handler defined -->
+     <bean id="urlMapping" 
+          class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+          <property name="urlMap">
+              
+               <map>
+               <entry key="/logon.htm">
+                         <ref bean="logonForm"/>
+                    </entry>
+                    <entry key="/portfolio.htm">
+                         <ref bean="portfolioController" />
+                    </entry>
+                    <entry key="/transaction.htm">
+                         <ref bean="transactionController" />
+                    </entry>
+                    <entry key="/processOrder.htm">
+                         <ref bean="processOrderController" />
+                    </entry>
+                    <entry key="/executeOrder.htm">
+                         <ref bean="executeOrderController" />
+                    </entry>
+                    
+               </map>
+          </property>
+     </bean>
+</beans>
