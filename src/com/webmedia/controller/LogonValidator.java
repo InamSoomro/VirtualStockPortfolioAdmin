@@ -14,7 +14,7 @@ import com.webmedia.service.UserManagerImp;
 
 /**
  * A Validator class deals with validating user inputs and verifying the user credentials
- * @author      Inam 
+ * @author      Inam Soomro
  * @version     1.0                                    
  * @since       2011-12          
  * 
