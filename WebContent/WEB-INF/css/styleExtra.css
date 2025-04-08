@@ -1,0 +1,449 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-image:url(../images/main-bg.gif);
+	background-repeat:repeat-x;
+	height:267px;
+	background-color:#FFFFFF;
+	font-family:Tahoma;
+	font-size:11px;
+	color:#333333;
+}
+#wrapper{
+	width:1001px;
+	margin:auto;
+	height:auto;
+}
+#footer-wrapper{
+	background-image:url(../images/bottom-bg.gif);
+	background-position:left top;
+	background-repeat:repeat-x;
+	background-color:#FFFFFF;
+	float:left;
+	width:100%;
+	height:150px;
+	margin-top:20px;
+	background-color:#FFFFFF;
+}
+#content-wrapper{
+	width:1000px;
+	float:left;
+	height:auto;
+}
+.left-nav_wrapper{
+	width:252px;
+	float:left;
+	height:397px;
+	background-image:url(../images/sub-menu_bg.gif);
+	background-repeat:repeat-y;
+}
+.int_pg-title{
+	width:252px;
+	height:45px;
+	float:left;
+}
+.logo{
+	width:1001px;
+	height:59px;
+	float:left;
+	padding-top:15px;
+	padding-bottom:15px;
+}
+.header-wrapper{
+	width:1001px;
+	height:301px;
+	padding-top:15px;
+	padding-bottom:25px;
+	float:left;
+}
+.header-flash{
+	width:753px;
+	height:301px;
+	float:left;
+}
+.header-left{
+	width:247px;
+	height:301px;
+	border-left:#a2b5c3 1px solid;
+	float:left;
+}
+.header-top_bg{
+	background-image:url(../images/header-top_bg.gif);
+	background-repeat:repeat-x;
+	width:248px;
+	height:19px;
+	float:left;
+}
+.header-bottom_bg{
+	background-image:url(../images/header-bottom_bg.gif);
+	background-repeat:repeat-x;
+	width:248px;
+	height:20px;
+	float:left;
+}
+.header-top_bg img{
+	float:right;
+}
+.header-bottom_bg img{
+	float:right;
+}
+.header-side_bg{
+	border-right:#a2b4c2 solid 1px;
+	width:247px;
+	height:14px;
+	float:left;
+}
+.header-tabs{
+	width:248px;
+	height:78px;
+	float:left;
+}
+.header-tabs img{
+	float:right;
+}
+.grey-box_wrapper{
+	width:403px;
+	height:auto;
+	float:left;
+}
+.blue-box_wrapper{
+	width:320px;
+	padding-left:20px;
+	height:auto;
+	float:left;
+}
+.right_banner{
+	width:247px;
+	height:238px;
+	float:right;
+}
+.content-txt{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	float:left;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:19px;
+	margin-right:19px;
+	color:#2b2b2b;
+	text-align:justify;
+	line-height: 15px;
+}
+.bpm-txt{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	float:left;
+	margin-top:10px;
+	margin-bottom:20px;
+	margin-left:19px;
+	margin-right:19px;
+	color:#2b2b2b;
+	text-align:justify;
+	line-height: 15px;
+}
+.read-more a:link{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#003463;
+	float:right;
+	padding-right:20px;
+	text-decoration:none;
+}
+.read-more a:visited{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#003463;
+	float:right;
+	padding-right:20px;
+	text-decoration:none;
+}
+.read-more a:hover{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#003463;
+	float:right;
+	padding-right:20px;
+	text-decoration:underline;
+}
+.footer_bg_wrapper{
+	width:1001px;
+	margin:auto;
+	margin-top:5px;
+}
+.footer_left-curve{
+	background-image:url(../images/footer-left.gif);
+	width:13px;
+	height:65px;
+	float:left;
+}
+.footer_bg{
+	background-image:url(../images/footer-bg.gif);
+	background-repeat:repeat-x;
+	width:975px;
+	height:65px;
+	float:left;
+}
+.footer_right-curve{
+	background-image:url(../images/footer-right.gif);
+	width:13px;
+	height:65px;
+	float:left;
+}
+.copy-right_txt{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#2b2b2b;
+	margin-top:20px;
+	float:left;
+}
+.footer_menu{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#2b2b2b;
+	float:right;
+}
+.internal-header{
+	width:1000px;
+	float:left;
+	height:136px;
+	padding-top:15px;
+	padding-bottom:10px;
+}
+
+
+/************************************************ GREY BOX ***********************************/
+
+.grey-top-left_curve{
+	background-image:url(../images/grey-top-left-curve.gif);
+	width:13px;
+	height:16px;
+	float:left;
+}	
+.grey-bottom-left_curve{
+	background-image:url(../images/grey-bottom-left-curve.gif);
+	width:13px;
+	height:16px;
+	float:left;
+}	
+.grey-bottom-right_curve{
+	width:96%;
+	background-color:#eeeeee;
+	float:left;
+}	
+.grey-top-right_curve{
+	width:96%;
+	background-color:#eeeeee;
+	float:left;
+}	
+.grey-mid{
+	width:99%;
+	background-color:#eeeeee;
+	float:left;
+}	
+.grey-top-right_curve img{
+	float:right;
+}	
+.grey-bottom-right_curve img{
+	float:right;
+}	
+
+/********************************************* GREY BOX *****************************************/
+
+.blue-top-left_curve{
+	background-image:url(../images/blue-top-left-curve.gif);
+	width:13px;
+	height:16px;
+	float:left;
+}	
+.blue-bottom-left_curve{
+	background-image:url(../images/blue-bottom-left-curve.gif);
+	width:13px;
+	height:16px;
+	float:left;
+}	
+.blue-bottom-right_curve{
+	width:94%;
+	background-color:#e8f1f6;
+	float:left;
+}	
+.blue-top-right_curve{
+	width:94%;
+	background-color:#e8f1f6;
+	float:left;
+}	
+.blue-mid{
+	width:98%;
+	background-color:#e8f1f6;
+	float:left;
+}	
+.blue-top-right_curve img{
+	float:right;
+}	
+.blue-bottom-right_curve img{
+	float:right;
+}
+.download-brochure{
+	width:198px;
+	height:84px;
+	padding-left:20px;
+	float:left;
+}	
+
+			     /*************************************  CSS FOR SUB NAVIGATION **********************************/
+.sub-menu{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#003566;
+	float:left;
+	height:250px;
+	text-decoration:none;
+}
+.sub-menu a:link{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#003566;	
+	text-decoration:none;
+	font-weight:normal;
+}
+.sub-menu a:visited{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;	
+	text-decoration:none;
+	font-weight:normal;
+	color:#003566;
+}
+.sub-menu a:hover{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	text-decoration:underline;
+	color:#003566;
+}
+.sub-menu ul{
+	margin-top:20px;
+}
+.sub-menu li{
+	list-style-image: url(../images/bullets-arrow.gif);
+	margin-top:10px;
+}	
+.sub-menu img{
+	padding-left:25px;
+	padding-top:100px;
+}
+.breadcrumbs{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#3ba4d4;
+	width:700px;
+	float:left;
+	border:#333333 0px solid;
+	padding-left:20px;
+	height:36px;
+}
+.content-area{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#3e3e3e;
+	text-align:justify;
+	padding-left:20px;
+	width:700px;
+	float:left;
+}
+.content-area img{
+	padding-top:11px;
+	float:left;
+}
+
+
+
+			     /*********************************  ENDING CSS FOR SUB NAVIGATION **********************************/
+
+
+				/********************************************** CSS  FOR MENU ********************************************/
+			    
+.menu{
+	background-image:url(../images/menu-bg.gif);
+	background-repeat:repeat-x;
+	width:999px;
+	float:right;
+	height:37px;
+	border: #a7b9c5 1px solid;
+}
+.menu ul{
+	margin-top:15px;
+	float:right;
+}
+.menu li{
+	list-style-type: none;
+	display:inline;
+	margin-right:20px;
+}
+.menu a:link{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#000000;
+	font-weight:bold;
+	padding:2px;
+	text-decoration:none;
+}
+.menu a:visited{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#0f2b5a;
+	font-weight:bold;
+	padding:2px;	
+	text-decoration:none;
+}
+.menu a:hover{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#800000;
+	font-weight:bold;
+	padding:2px;
+	text-decoration:none;
+}
+.menu_selected{
+	color:#ffffff;
+	background-color:#c8e3f8;
+	font-weight:bold;
+	padding:2px;
+	text-decoration:none;
+}
+							  
+					/**************************************** ENDING CSS FOR MENU**************************************/ 
+
+					/**************************************** CSS FOR FOOTER MENU**************************************/ 
+					
+.footer_menu ul{
+	margin-top:20px;
+	float:right;
+}
+.footer_menu li{
+	list-style-type: none;
+	display:inline;
+	margin-right:5px;
+}
+.footer_menu a:link{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	
+	color:#003566;
+	font-weight:normal;
+	padding:2px;
+	text-decoration:none;
+}
+.footer_menu a:visited{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#003566;
+	font-weight:normal;
+	text-decoration:none;
+}
+.footer_menu a:hover{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#003566;
+	font-weight:normal;
+	text-decoration:none;
+}
+
+				/**************************************** ENDING CSS FOR FOOTER MENU**************************************/ 
